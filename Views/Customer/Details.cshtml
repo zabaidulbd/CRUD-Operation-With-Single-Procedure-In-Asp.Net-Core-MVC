@@ -1,0 +1,56 @@
+﻿@model SatyaMvc4Crud.Models.Customer
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend style="font-family:Arial Black;color:Green">Customer Report</legend>
+
+        <div class="display-label" style="font-family:Arial Black">
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div class="display-field" style="color:Blue">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+
+        <div class="display-label" style="font-family:Arial Black">
+            @Html.DisplayNameFor(model => model.Address)
+        </div>
+        <div class="display-field" style="color:Blue">
+            @Html.DisplayFor(model => model.Address)
+        </div>
+
+        <div class="display-label" style="font-family:Arial Black">
+            @Html.DisplayNameFor(model => model.Mobileno)
+        </div>
+        <div class="display-field" style="color:Blue">
+            @Html.DisplayFor(model => model.Mobileno)
+        </div>
+
+        <div class="display-label" style="font-family:Arial Black">
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </div>
+        <div class="display-field" style="color:Blue">
+            @Html.DisplayFor(model => model.Birthdate)
+        </div>
+
+        <div class="display-label" style="font-family:Arial Black">
+            @Html.DisplayNameFor(model => model.EmailID)
+        </div>
+        <div class="display-field" style="color:Blue">
+            @Html.DisplayFor(model => model.EmailID)
+        </div>
+    </fieldset>
+    <p style="color:Blue;font-family:Arial">
+        @Html.ActionLink("Back to Customer Records", "ShowAllCustomerDetails")
+    </p>
+</body>
+</html> 
